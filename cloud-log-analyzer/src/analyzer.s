@@ -1,9 +1,30 @@
 /*
-Autor: Ramirez Gonzalez Benjamin
-Curso: Arquitectura de Computadoras / Ensamblador ARM64
+Autor: Ramírez Gonzalez Benjamín
+Curso: Lenguajes de Interfaz
 Práctica: Mini Cloud Log Analyzer - VARIANTE B (Código más frecuente)
 Fecha: 22 de abril de 2026
 Descripción: Identifica el código HTTP que más veces aparece en la entrada.
+*/
+
+/*
+PSEUDOCÓDIGO:
+1) Reservar espacio para tabla_frecuencia (600 elementos de 8 bytes).
+2) Mientras haya bytes por leer en stdin:
+   2.1) Leer bloque de texto a buffer.
+   2.2) Por cada byte:
+        - Si es dígito: numero_actual = (numero_actual * 10) + (byte - '0').
+        - Si es '\n': 
+            a) Validar si 100 <= numero_actual <= 599.
+            b) tabla_frecuencia[numero_actual]++.
+            c) Reiniciar numero_actual.
+3) Al terminar la lectura (EOF):
+   3.1) Inicializar max_frecuencia = 0, codigo_ganador = 0.
+   3.2) Para i desde 100 hasta 599:
+        - Si tabla_frecuencia[i] > max_frecuencia:
+            max_frecuencia = tabla_frecuencia[i]
+            codigo_ganador = i.
+4) Imprimir reporte: "Código más frecuente: [codigo_ganador] (Apariciones: [max_frecuencia])".
+5) Salir con código 0.
 */
 
 .equ SYS_read,   63
