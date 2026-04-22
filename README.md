@@ -3,6 +3,12 @@
 
 # Práctica 1
 
+Alumno: Ramírez Gonzalez Benjamín
+
+No. Control: 23212052
+
+Materia: Lenguajes de Interfaz
+
 ## Implementación de un Mini Cloud Log Analyzer en ARM64
 
 **Modalidad:** Individual
@@ -64,43 +70,11 @@ El estudiante deberá completar la lógica correspondiente.
 
 ---
 
-## Variantes de la práctica
-
-### Variante A
-
-Contabilizar:
-
-* respuestas exitosas (2xx)
-* errores del cliente (4xx)
-* errores del servidor (5xx)
-
----
+## Variante de la práctica
 
 ### Variante B
 
 Determinar el código de estado más frecuente.
-
----
-
-### Variante C
-
-Detectar el primer evento crítico (503).
-
----
-
-### Variante D
-
-Detectar tres errores consecutivos.
-
----
-
-### Variante E
-
-Calcular índice de salud:
-
-```text id="2u4vvx"
-Health Score = 100 - (errores × 10)
-```
 
 ---
 
@@ -165,4 +139,11 @@ Comprender cómo un problema de procesamiento de datos es implementado a nivel m
 
 Aunque este problema puede resolverse fácilmente en lenguajes de alto nivel, el propósito de la práctica es implementar **cómo lo resolvería la arquitectura**, no únicamente obtener el resultado.
 
-https://asciinema.org/a/963564
+---
+
+## Evidencia de ejecución
+
+<img width="1920" height="1080" alt="Captura de pantalla (1254)" src="https://github.com/user-attachments/assets/94013767-4e99-4b58-a69c-c0e0b4147e19" />  
+
+\
+Asciinema: https://asciinema.org/a/963564
