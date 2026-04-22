@@ -9,6 +9,8 @@ No. Control: 23212052
 
 Materia: Lenguajes de Interfaz
 
+---
+
 ## Implementación de un Mini Cloud Log Analyzer en ARM64
 
 **Modalidad:** Individual
