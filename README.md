@@ -165,3 +165,4 @@ Comprender cómo un problema de procesamiento de datos es implementado a nivel m
 
 Aunque este problema puede resolverse fácilmente en lenguajes de alto nivel, el propósito de la práctica es implementar **cómo lo resolvería la arquitectura**, no únicamente obtener el resultado.
 
+https://asciinema.org/a/963564
